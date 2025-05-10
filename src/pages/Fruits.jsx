@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import { useCart } from "../context/CartContext";
 import fruitsData from "../assets/FruitsData.json";
-import Swal from "sweetalert2"; //  Import SweetAlert
+import Swal from "sweetalert2"; 
 
 const Fruits = () => {
   const { addToCart, removeFromCart, increaseQuantity, decreaseQuantity, cart } = useCart();
-  const [clickedItem, setClickedItem] = useState(null); //  Track clicked item
+  const [clickedItem, setClickedItem] = useState(null); 
 
   const handleAddToCart = (fruit) => {
     addToCart(fruit);
